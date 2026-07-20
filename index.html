@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Papua - Pelestarian Budaya Lokal</title>
+    <meta name="description"
+        content="Menjelajahi warisan kuliner tradisional Papua. Melestarikan budaya lokal melalui platform digital interaktif.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main" class="skip-link">Lanjut ke Konten Utama</a>
+
+    <!-- Navbar -->
+    <header class="navbar navbar-dark">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo" style="gap: 12px;">
+                <img src="assets/images/logo-transparent.png" alt="PapuaKulina Logo"
+                    style="height: 48px; width: auto; border-radius: var(--radius-sm);">
+                PapuaKulina
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="kuliner.html" class="nav-link">Kuliner</a></li>
+                    <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero reveal active"
+            style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(27, 27, 27, 0.5), rgba(27, 27, 27, 0.5)), url('assets/images/hero-bg.png') center/cover no-repeat; color: var(--color-surface); padding-top: var(--space-10);">
+            <div class="container flex flex-col items-center justify-center">
+                <span class="section-subtitle reveal-up delay-100" style="color: var(--color-accent);">Pelestarian
+                    Budaya Lokal</span>
+                <h1 class="hero-title reveal delay-200">Menjelajahi Warisan<br>Kuliner Tradisional Papua</h1>
+                <p class="hero-subtitle reveal delay-300">Melestarikan budaya lokal melalui teknologi digital dan
+                    dokumentasi ensiklopedis.</p>
+                <div class="flex gap-4 reveal delay-400">
+                    <a href="kuliner.html" class="btn btn-primary hover-lift"
+                        style="background-color: var(--color-accent); color: var(--color-dark); border: none;">Eksplor
+                        Kuliner</a>
+                    <a href="tentang.html" class="btn btn-outline hover-lift"
+                        style="border-color: var(--color-surface); color: var(--color-surface);">Tentang Budaya</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="section container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <div class="reveal-up">
+                <span class="section-subtitle">Filosofi Kuliner</span>
+                <h2>Lebih Dari Sekadar Makanan</h2>
+                <p>Kuliner Papua bukan sekadar kebutuhan biologis, melainkan representasi dari hubungan harmonis
+                    antara manusia, alam, dan leluhur. Setiap hidangan membawa cerita sejarah dan nilai kearifan
+                    lokal yang diwariskan turun-temurun.</p>
+                <p>Melalui platform ini, kami mendokumentasikan kekayaan boga bahari dan hasil bumi Papua sebagai
+                    arsip digital untuk generasi mendatang.</p>
+                <a href="tentang.html" class="btn btn-outline" style="margin-top: var(--space-4);">Pelajari Latar
+                    Belakang</a>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="section" style="background-color: var(--color-surface);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Ragam Kuliner</span>
+                    <h2>Kekayaan Rasa Khas Papua</h2>
+                </div>
+                <div class="grid grid-cols-3 gap-4" id="featured-grid">
+                    <!-- Featured items hardcoded for homepage -->
+                    <article class="card reveal delay-100">
+                        <a href="detail.html?id=papeda-ikan-kuah-kuning" class="card-link"
+                            style="text-decoration: none; display: flex; flex-direction: column; height: 100%; color: inherit;">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/papeda.png" alt="Papeda & Ikan Kuah Kuning" class="card-img"
+                                    loading="lazy">
+                                <span class="card-badge">Makanan Pokok</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Papeda & Ikan Kuah Kuning</h3>
+                                <p class="card-region">📍 Raja Ampat</p>
+                                <p class="card-desc">Bubur sagu tradisional dengan ikan kuah kuning rempah, hidangan
+                                    sakral Papua.</p>
+                                <span class="btn btn-outline" style="margin-top: auto;">Lihat Detail</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="card reveal delay-200">
+                        <a href="detail.html?id=sate-ulat-sagu" class="card-link"
+                            style="text-decoration: none; display: flex; flex-direction: column; height: 100%; color: inherit;">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/sate_ulat_sagu.png" alt="Sate Ulat Sagu" class="card-img"
+                                    loading="lazy">
+                                <span class="card-badge">Lauk Pauk</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Sate Ulat Sagu</h3>
+                                <p class="card-region">📍 Mimika</p>
+                                <p class="card-desc">Sate ulat sagu berprotein tinggi, camilan khas masyarakat pedalaman
+                                    Papua.</p>
+                                <span class="btn btn-outline" style="margin-top: auto;">Lihat Detail</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="card reveal delay-300">
+                        <a href="detail.html?id=kue-lontar" class="card-link"
+                            style="text-decoration: none; display: flex; flex-direction: column; height: 100%; color: inherit;">
+                            <div class="card-img-wrapper">
+                                <img src="assets/images/kue_lontar.png" alt="Kue Lontar" class="card-img"
+                                    loading="lazy">
+                                <span class="card-badge">Camilan</span>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Kue Lontar</h3>
+                                <p class="card-region">📍 Fakfak</p>
+                                <p class="card-desc">Kue tart custard khas Fakfak, hasil akulturasi budaya Eropa dan
+                                    Papua.</p>
+                                <span class="btn btn-outline" style="margin-top: auto;">Lihat Detail</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <div class="flex justify-center" style="margin-top: var(--space-8);">
+                    <a href="kuliner.html" class="btn btn-primary reveal delay-400">Lihat Seluruh Ragam Kuliner</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top grid grid-cols-3" style="grid-template-columns: 2fr 1fr 1fr; gap: var(--space-8);">
+                <div class="reveal-left">
+                    <div class="footer-brand"
+                        style="display: flex; align-items: center; gap: 12px; margin-bottom: var(--space-4);">
+                        <img src="assets/images/logo-white.png" alt="PapuaKulina Logo"
+                            style="height: 56px; width: auto; border-radius: var(--radius-sm);">
+                        PapuaKulina
+                    </div>
+                    <p style="max-width: 400px; color: rgba(255,255,255,0.8); margin-bottom: var(--space-4);">Platform
+                        digital ensiklopedia kuliner untuk melestarikan warisan budaya boga bahari dan hasil bumi Papua.
+                    </p>
+                </div>
+                <div class="reveal-up delay-100">
+                    <h4 style="color: var(--color-surface); margin-bottom: var(--space-4); font-size: 1.125rem;">Tautan
+                        Cepat</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2);">
+                        <li><a href="index.html" class="hover-lift"
+                                style="color: rgba(255,255,255,0.7); display: inline-block;">Beranda</a></li>
+                        <li><a href="kuliner.html" class="hover-lift"
+                                style="color: rgba(255,255,255,0.7); display: inline-block;">Ragam Kuliner</a></li>
+                        <li><a href="tentang.html" class="hover-lift"
+                                style="color: rgba(255,255,255,0.7); display: inline-block;">Tentang Proyek</a></li>
+                    </ul>
+                </div>
+                <div class="reveal-right delay-200">
+                    <h4 style="color: var(--color-surface); margin-bottom: var(--space-4); font-size: 1.125rem;">
+                        Institusi</h4>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: var(--space-1); font-weight: 600;">
+                        Universitas Muhammadiyah Sorong</p>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: var(--space-4); font-size: 0.875rem;">Program
+                        Studi Teknik Informatika</p>
+                    <p style="color: var(--color-accent); font-weight: 500;">Dikembangkan oleh Kelompok 22</p>
+                </div>
+            </div>
+            <div class="footer-bottom reveal delay-300"
+                style="display: flex; justify-content: space-between; align-items: center; padding-top: var(--space-4);">
+                <p>&copy; 2026 Hak Cipta Dilindungi.</p>
+                <p>Tugas Akhir - Pengembangan Sistem Berbasis Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+
+</html>

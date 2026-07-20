@@ -1,0 +1,65 @@
+/* variables.css
+ * Design System Tokens for Papua Culinary Platform
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+ :root {
+     /* Color Palette */
+     --color-primary: #195a42; /* Slightly deeper for better contrast */
+     --color-primary-dark: #12402f;
+     --color-primary-light: #227b59;
+     --color-secondary: #8b5a2b; /* Richer earth tone */
+     --color-accent: #d4a373; /* Softer, premium accent */
+     --color-background: #faf8f5; /* Cleaner background */
+     --color-surface: #ffffff;
+     --color-dark: #1a1a1a;
+     --color-text: #2c2c2c;
+     --color-text-light: #6b6b6b;
+     --color-border: #e6e2db;
+     --color-error: #c84b31; /* Added for error states */
+     --color-success: #2d6a4f; /* Added for success states */
+     
+     /* Typography */
+     --font-heading: 'Poppins', sans-serif;
+     --font-body: 'Inter', sans-serif;
+     
+     /* Spacing Scale (8px system) */
+     --space-1: 8px;
+     --space-2: 16px;
+     --space-3: 24px;
+     --space-4: 32px;
+     --space-5: 40px;
+     --space-6: 48px;
+     --space-8: 64px;
+     --space-10: 80px;
+     --space-12: 96px;
+     --space-16: 128px;
+ 
+     /* Border Radius */
+     --radius-sm: 8px;
+     --radius-md: 16px;
+     --radius-lg: 24px;
+     --radius-pill: 9999px;
+ 
+     /* Shadows */
+     --shadow-sm: 0 2px 8px -2px rgba(0, 0, 0, 0.05), 0 1px 4px -1px rgba(0, 0, 0, 0.03);
+     --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+     --shadow-lg: 0 16px 32px -4px rgba(0, 0, 0, 0.1), 0 8px 16px -4px rgba(0, 0, 0, 0.04);
+     --shadow-hover: 0 20px 40px -4px rgba(25, 90, 66, 0.15), 0 8px 16px -4px rgba(0, 0, 0, 0.04);
+     
+     /* Transitions (Premium Easing) */
+     --transition-fast: 150ms cubic-bezier(0.25, 1, 0.5, 1);
+     --transition-normal: 300ms cubic-bezier(0.25, 1, 0.5, 1);
+     --transition-slow: 600ms cubic-bezier(0.25, 1, 0.5, 1);
+ 
+     /* Z-Index */
+     --z-navbar: 1000;
+     --z-modal: 2000;
+     --z-tooltip: 3000;
+ }
+ 
+ /* Accessible focus state utility variable */
+ :root {
+     --focus-ring: 0 0 0 3px rgba(217, 164, 65, 0.5); /* Accent color ring */
+ }

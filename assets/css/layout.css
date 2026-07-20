@@ -1,0 +1,181 @@
+/* layout.css
+ * Global resets, semantic tags, and grid layout system.
+ */
+
+ /* Reset & Box Sizing */
+ *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Enhances UX for anchor links */
+    font-size: 16px; /* Base 16px for rem units */
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+    margin-bottom: var(--space-2);
+}
+
+h1, h2, h3 { 
+    letter-spacing: -0.03em; 
+    line-height: 1.1; 
+}
+
+h4, h5, h6 { 
+    letter-spacing: -0.01em; 
+    line-height: 1.3; 
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin-bottom: var(--space-3);
+    max-width: 70ch; /* Optimal line length for readability */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Accessible Focus States */
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+    border-radius: 4px;
+    box-shadow: var(--focus-ring);
+}
+
+/* Accessibility: Skip to main content link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--space-2) var(--space-4);
+    z-index: 9999;
+    font-weight: 600;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Structural Layouts */
+main {
+    flex: 1; /* Pushes footer to bottom */
+}
+
+/* Container & Grid System */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: var(--space-4);
+}
+
+.section {
+    padding-block: var(--space-12);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.section-subtitle {
+    color: var(--color-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: var(--space-2);
+}
+
+/* CSS Grid Columns */
+.grid {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Flex Utilities */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+
+/* Specific Page Typography */
+.hero-title {
+    color: var(--color-surface);
+    max-width: 800px;
+    margin-inline: auto;
+    font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-6);
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+/* Mobile Navigation Utilities */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999; /* Below the navbar (1000) */
+    display: none;
+    /* Invisible layer to catch clicks outside the drawer */
+}
+
+.nav-overlay.active {
+    display: block;
+}
